@@ -1,0 +1,375 @@
+format-version: 1.0
+data-version: 0.9
+date: 14:05:2014 15:30
+saved-by: pab
+auto-generated-by: OBO-Edit 1.101
+default-namespace: DB
+namespace-id-rule: * PEFF:$sequence(7,0,9999999)$
+remark: namespace: PEFF
+remark: publisher: HUPO Proteomics Standards Initiative
+remark: creator: Pierre-Alain Binz <pierre-alain.binz <-at-> chuv.ch>
+remark: When appropriate the definition and synonyms of a term are reported exactly as in the chapter 12 of IUPAC orange book. See http://www.iupac.org/projects/2003/2003-056-2-500.html.
+	
+[Typedef]
+id: has_regexp
+name: has regexp
+
+[Typedef]
+id: has_units
+name: has_units
+
+[Typedef]
+id: part_of
+name: part_of
+is_transitive: true
+
+[Typedef]
+id: has_order
+name: has_order
+
+[Term]
+id: DB:0000000
+name: PEFF CV
+def: "PSI Extended Fasta Format Controlled Vocabulary." [PSI:DB]
+
+[Term]
+id: DB:0000002
+name: File Header Section
+def: "PEFF File Header Section."  [PSI:DB]
+is_a: DB:0000001 ! PEFF CV term
+
+[Term]
+id: DB:0000003
+name: Individual Sequence Entries Section
+def: "PEFF Individual Entry Section."  [PSI:DB]
+is_a: DB:0000001 ! PEFF CV term
+
+[Term]
+id: DB:0000004
+name: File Description Block
+def: "PEFF File Description Block."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000005
+name: Database Description Block
+def: "PEFF Database Description Block."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000006
+name: Sequence Entry
+def: "PEFF Sequence Entry."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+
+[Term]
+id: DB:0000007
+name: Sequence Entry description
+def: "PEFF Sequence Entry description."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000008
+name: DbName
+def: "Sequence Database Name."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000009
+name: Prefix
+def: "Sequence Database Prefix."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000010
+name: DbDescription
+def: "Sequence Database Short description."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000011
+name: Decoy
+def: "Specifies whether the Sequence Database is a Decoy."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:boolean "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000012
+name: DbSource
+def: "Source of the database file."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000013
+name: DbVersion
+def: "Database version (release date) according to database provider."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000014
+name: DbDate
+def: "Database date (release or file date of the source) according to database provider."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+is_obsolete: true
+
+[Term]
+id: DB:0000015
+name: NumberOfEntries
+def: "Number of sequence entries in the database."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:integer "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000016
+name: Conversion
+def: "Description of the conversion from original format to this current one."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000017
+name: SequenceType
+def: "Molecular type of the sequences."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+relationship: has_regexp DB:1002002 !(AA|NA|DNA|cDNA|RNA|RNAi|tRNA|rRNA|siRNA|mDNA|mRNA|snoRNA|ncRNA|EST|[a-z0-9A-Z]+)
+
+[Term]
+id: DB:0000018
+name: SpecificKey
+def: "Db specific information (not included in the current list of allowed keys)."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000019
+name: SpecificValue
+def: "DB specific values for a defined key."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000020
+name: DatabaseDescription
+def: "Short Description of the DB."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0000021
+name: GeneralComment
+def: "PEFF file general comment."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001001
+name: DbUniqueId
+def: "Sequence Database unique identifier."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001002
+name: PName
+def: "Protein Name, description."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001003
+name: NcbiTaxId
+def: "NCBI taxonomy identifier."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:int "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001004
+name: TaxName
+def: "Taxonomy name (latin or common name)."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001005
+name: GName
+def: "Gene name."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001006
+name: Length
+def: "Sequence length."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:int "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001007
+name: SV
+def: "Sequence version."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001008
+name: EV
+def: "Entry version."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001009
+name: PE
+def: "Protein Evidence; A UniprotKB code."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:int "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001010
+name: Processed
+def: "Processed Molecule."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+relationship: has_regexp DB:1002001 ! \([0-9]+\|[0-9]+\|[a-zA-Z0-9]*\)
+
+[Term]
+id: DB:0001011
+name: Variant
+def: "Sequence variation (substitution, insertion, deletion)."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+relationship: has_regexp DB:1002001 ! \([0-9]+\|[0-9]+\|[a-zA-Z0-9]*\)
+
+[Term]
+id: DB:0001012
+name: ModResPsi
+def: "Modified residue with PSI-MOD identifier."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+relationship: has_regexp DB:1002001 ! \([0-9]+\|[0-9]+\|[a-zA-Z0-9]*\)
+
+[Term]
+id: DB:0001013
+name: ModRes
+def: "Modified residue without PSI-MOD identifier."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+relationship: has_regexp DB:1002001 ! \([0-9]+\|[0-9]+\|[a-zA-Z0-9]*\)
+
+[Term]
+id: DB:0001014
+name: AltAC
+def: "Alternative Accession Code."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001015
+name: SeqStatus
+def: "Sequence Status. Complete or Fragment."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+
+[Term]
+id: DB:0001016
+name: CC
+def: "Entry associated comment."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001017
+name: KW
+def: "Entry associated keyword(s)."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001018
+name: GO
+def: "Gene Ontology code."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001019
+name: XRef
+def: "Cross-reference to an external resource."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001020
+name: Chain
+def: "Sequence range of active processed polypeptide."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+relationship: has_regexp DB:1002001 ! \([0-9]+\|[0-9]+\|[a-zA-Z0-9]*\)
+
+[Term]
+id: DB:0001021
+name: Signal
+def: "Sequence range of signal peptide."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+relationship: has_regexp DB:1002001 ! \([0-9]+\|[0-9]+\|[a-zA-Z0-9]*\)
+
+[Term]
+id: DB:0001022
+name: Transit
+def: "Sequence range of transit peptide."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+relationship: has_regexp DB:1002001 ! \([0-9]+\|[0-9]+\|[a-zA-Z0-9]*\)
+
+[Term]
+id: DB:0001023
+name: Conflict
+def: "Sequence conflict; a UniProtKB term."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+relationship: has_regexp DB:1002001 ! \([0-9]+\|[0-9]+\|[a-zA-Z0-9]*\)
+
+[Term]
+id: DB:0001024
+name: Crc64
+def: "Sequence checksum in crc64."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001025
+name: Domain
+def: "Sequence range of a domain."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: DB:0001026
+name: ID
+def: "UniProtKB specific Protein identifier ID; a UniProtKB term."  [PSI:DB]
+is_a: DB:0000003 ! Individual Sequence Entries Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
+id: MS:1002001
+name: \([0-9]+\|[0-9]+\|[a-zA-Z0-9]*\)
+def: "Regular expression for DB description line value with three components." [PSI:DB]
+is_a: MS:1002480 ! regular expression
+
+[Term]
+id: MS:1002002
+name: (AA|NA|DNA|cDNA|RNA|RNAi|tRNA|rRNA|siRNA|mDNA|mRNA|snoRNA|ncRNA|EST|[a-z0-9A-Z]+)
+def: "Regular expression for the molecular type of the sequences." [PSI:DB]
+is_a: MS:1002480 ! regular expression
+
