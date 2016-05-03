@@ -1,0 +1,191 @@
+format-version: 1.0
+date: 23:04:2008 10:40
+saved-by: pab
+auto-generated-by: OBO-Edit 1.101
+default-namespace: PSI-DB
+remark: When appropriate the definition and synonyms of a term are reported exactly as in the chapter 12 of IUPAC orange book. See http://www.iupac.org/projects/2003/2003-056-2-500.html.
+
+[Term]
+id: DB:0000001
+name: Common Sequence Database Format Controlled Vocabulary
+def: "Common Sequence Database Format Controlled Vocabulary." [PSI:DB]
+
+[Term]
+id: DB:0000002
+name: File Header Section
+def: "Common Sequence Database Format File Header Section."  [PSI:DB]
+is_a: DB:0000001 ! CV root term
+
+[Term]
+id: DB:0000003
+name: Individual Sequence Entry Section
+def: "Common Sequence Database Format Individual Entry Section."  [PSI:DB]
+is_a: DB:0000001 ! CV root term
+
+[Term]
+id: DB:0000004
+name: DbName
+def: "Sequence Database Name."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+
+[Term]
+id: DB:0000005
+name: Prefix
+def: "Sequence Database Prefix."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+
+[Term]
+id: DB:0000006
+name: DbDescription
+def: "Sequence Database Short description."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+
+[Term]
+id: DB:0000007
+name: Decoy
+def: "Speciofies whether the Sequence Database is a Decoy."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+
+[Term]
+id: DB:0000008
+name: DbSource
+def: "Source of the database file."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+
+[Term]
+id: DB:0000009
+name: DbVersion
+def: "Database version (release date) according to database provider."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+
+[Term]
+id: DB:0000010
+name: DbDate
+def: "Database date (release or file date of the source) according to database provider."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+is: obsolete
+
+[Term]
+id: DB:0000011
+name: NumberOfEntries
+def: "Number of sequence entries in the database."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+
+[Term]
+id: DB:0000012
+name: Conversion
+def: "Description of the conversion from original format to this current one."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+
+[Term]
+id: DB:0000013
+name: SequenceType
+def: "Molecular type of the sequences."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+
+[Term]
+id: DB:0000014
+name: SpecificKey
+def: "Db specific information (not included in the current list of allowed keys)."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+
+[Term]
+id: DB:0000015
+name: SpecificValue
+def: "DB specific values for a defined key."  [PSI:DB]
+is_a: DB:0000002 ! File Header Section term
+
+[Term]
+id: DB:0001001
+name: DbUniqueId
+def: "Sequence Database unique indentifier."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001002
+name: PName
+def: "Protein Name, description."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001003
+name: NcbiTaxId
+def: "NCBI taxonomy identifier."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001004
+name: TaxName
+def: "Taxonomy name (latin or common name)."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001005
+name: GName
+def: "Gene name."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001006
+name: Length
+def: "Sequence length."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001007
+name: SV
+def: "Sequence version."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001008
+name: EV
+def: "Entry version."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001009
+name: PE
+def: "Protein Evidence; A UniprotKB code."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001010
+name: Processed
+def: "Processed Molecule."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001011
+name: Variant
+def: "Sequence variation (substitution, insertion, deletion)."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001012
+name: ModResPsi
+def: "Modified residue with PSI-MOD identifier."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001013
+name: ModRes
+def: "Modified residue without PSI-MOD identifier."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+[Term]
+id: DB:0001014
+name: AltAC
+def: "Alternative Accession Code."  [PSI:DB]
+is_a: DB:0000003 ! Individual Entry Section term
+
+
+
+
+
+
+
+
+
+
+
