@@ -178,6 +178,13 @@ is_a: PEFF:0000002 ! File Header Section term
 xref: value-type:xsd\:string "The allowed value-type for this CV term."
 
 [Term]
+id: PEFF:0000023
+name: CustomTag
+def: "A tag (short string) used to categorize a sequence annotation (variant or modification)."  [PSI:PEFF]
+is_a: PEFF:0000002 ! File Header Section term
+xref: value-type:xsd\:string "The allowed value-type for this CV term."
+
+[Term]
 id: PEFF:0001001
 name: DbUniqueId
 def: "Sequence Database unique identifier."  [PSI:PEFF]
