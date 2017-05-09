@@ -1,0 +1,34 @@
+PEFF at HUPO-PSI 2017 in Beijing, April 2017
+PAB
+
+
+PEFF introduction
+-----------------
+- Task: add proteoforms
+- Task: think about huge annotation 
+- Usecase from ribosome profiling
+- Task: website
+
+
+PEFF session
+------------
+- add Gerben and Andrew Dowsey in the list
+- interested parties: neXtProt, Uniprot (Emanuele), Comet (Jimmy Eng), Thermo BioPharma (Jim) 
+- ask Sean
+- contact MSAmanda Karl Mechtler, Victoria (via Harald), Prosite (Neil Kelleher via Jim) people?
+OK- to do: find time for calls : Tuesdays 4pm GMT (5pm CH, 8am Seattle)
+- to do: update example files
+OK- Q _ deletion simple in variant simple? yes
+- To do: in CV: can one use a key to describe the name: Typedef : PEFFKey??   see ftp://ftp.geneontology.org/pub/go/www/GO.format.obo-1_2.shtml
+- include PEFF CV into PSI-MS CV: change IDs, add PEFFKey, andle regexp
+- check in mzIdentML how a peptide with variant would look like
+OK- add explicit list of AA characters allowed in a sequence block
+OK- sequence length field should be encouraged
+OK- order : should PTM and Variant at the end of the header line
+OK - modres_ recommend to change the order in the spec doc: Unimod - psimod- others
+OK- comment P21 : yes
+OK- optional tag : recomend use for evidences
+OK supports for proteoforms : key at DBheader to add
+OK- calls tuesdays 5pm
+- usecase proteogenomics ok?
+OK- calls schedules?
