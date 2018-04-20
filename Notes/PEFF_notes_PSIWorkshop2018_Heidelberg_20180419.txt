@@ -1,0 +1,48 @@
+Notes from the PEFF session at HUPO-PSI 2018 in Heidelberg, 20180419
+--------------------------------------------------------------------
+
+
+- Emanuele Alpi presented the PEFf export as part of te Uniprot protein API. Still under development, supports VariantSimple at the moment
+
+- Luis Mendoza presented the implementation of PEFF in TPP (COMET, pepXML, MADCAPS, ...). Libraries might be made available as separate code into the TPP package
+
+
+
+- Decision: spec doc: OptionalTag : [ ] is to be used to separate elements of a list. [ ] is also recommended for a list of one element
+  Example: \VariantSimple=(1¦H¦[1000Genomes])
+
+- Decision: OptionalTag : if values are to be repeated along the PEFF document, it is allowed to define abreviations in the Database Header section
+ Example:
+  # OptionalTagDef=(1000Genomes¦A)(Ensembl¦B)
+  ...
+  >UP:P12345 \VariantSimple=(1¦H¦[A][B])(100¦Q¦[B])
+
+- TODO: add OptionalTagDef in PEFF CV
+
+- TODO: update the spec doc for OptionalTag
+
+- Question: do we need to add the Uniprot FT keys as CV terms of the PEFF CV? (usecase protein API, longer term) Alternatively: use customKeys, but would be a shame.
+
+- TODO: Document the following rule: if there si a key available for a bit of information in the CV, this CV term must be used. Consider then adding a new term in the CV before using customKeys
+
+- TODO: Remove the \DbUniqueId=nnn  from the example files (it's redundant with the >prefix:DbUniqueId identifier)
+
+- TODO: Add a term dbSourceId in the CV (def: protein entry identifier in the source database)
+
+- TODO: Add a Comment term for sequence entry header level  (format in instance doc:  \Comment= free text  , can have a list of comments  : \Comment=(comment 1)(comment 2)  )
+
+- TODO: Change the spec doc: allow # GeneralComment in the database header block
+
+- TODO: propose neXtProt to change the annotation of disulfide bridges : from \ModRes=(2¦¦Disulfide) to \ModResPsi=(2¦MOD:00798¦half cystine)
+
+- Decision: format for processed sequences: \Processed=(1@40¦PEFF:0001021¦Signal) ; do not use \Signal=(1¦40)
+
+- TODO: complete the spec doc and check example files for \Processed
+
+- TODO: add the Uniprot processed keywords in the CV
+
+- TODO: add Proteoform key for protein sequence ; allowed format: \Proteoform=(identifier¦positions¦indexes to variants and PTMs¦proteoform description)  example : \Proteoform=(P12345-pf1¦1-200,210-320¦1-4,8¦phosphorylated, active form of the enzyme)
+
+
+PAB, 20180420
+
