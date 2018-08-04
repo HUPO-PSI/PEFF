@@ -1,0 +1,19 @@
+
+- oops, it looks like nextprot is writing \Processed wrong. it should be
+  (1|40|PEFF:1027|signal sequence)
+- Fix the nextprot or change the spec?
+- Validator didn't catch this
+
+- how should decoys be done?
+If we have
+  nxp:NX_P12345-1
+as one entry. What should its decoy be?
+  nxp:DECOY_NX_P12345-1
+or
+  decoy:NX_P12345-1
+or
+  decoy:DECOY_NX_P12345-1
+
+
+
+
