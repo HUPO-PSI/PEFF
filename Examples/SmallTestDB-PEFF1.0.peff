@@ -12,10 +12,10 @@
 # NumberOfEntries=28
 # Conversion=manual extraction of entries, conversion with prepareDb.pl and then manually edited
 # SequenceType=AA
-# SpecificKey=3D-Status:status of a 3-D structure
-# SpecificValue=3D-Status:(available|unsure|not available)
 # SpecificKey=isoform:description of a specific isoform
 # SpecificValue=isoform:(xsd:type=string)
+# SpecificKey=3D-Status:status of a 3-D structure
+# SpecificValue=3D-Status:(available|unsure|not available)
 # //
 # DbName=NCBInr-exract
 # Prefix=nr
@@ -127,7 +127,7 @@ GDFGADAQGAMKKALELFRNDMAAKYKELGFQG
 GLSDGEWQLVLNVWGKVEADIPGHGQEVLIRLFKGHPETLEKFDKFKHLKSEDEMKASED
 LKKHGATVLTALGGILKKKGHHEAEIKPLAQSHATKHKIPVKYLEFISECIIQVLQSKHP
 GDFGADAQGAMNKALELFRKDMASNYKELGFQG
->sp:P00761 \ID=TRYP_PIG \PName=(Trypsin precursor) (EC 3.4.21.4) \NcbiTaxId=9823 \Length=231 \Processed=(1|8|PROPEP)(9|231|CHAIN) \VariantSimple=(20|V)
+>sp:P00761 \ID=TRYP_PIG \PName=(Trypsin precursor) (EC 3.4.21.4) \NcbiTaxId=9823 \Length=231 \Processed=(1|8|PEFF:0001021|Signal)(9|231|PEFF:0001020|Chain) \VariantSimple=(20|V)
 FPTDDDDKIVGGYTCAANSIPYQVSLNSGSHFCGGSLINSQWVVSAAHCYKSRIQVRLGE
 HNIDVLEGNEQFINAAKIITHPNFNGNTLDNDIMLIKLSSPATLNSRVATVSLPRSCAAA
 GTECLISGWGNTKSSGSSYPSLLQCLKAPVLSDSSCKSSYPGQITGNMICVGFLEGGKDS
@@ -238,7 +238,7 @@ RELEELNVPGEIVESLSSSEESITRINKKIEKFQSEEQQQTEDELQDKIHPFAQTQSLVY
 PFPGPIPNSLPQNIPPLTQTPVVVPPFLQPEVMGVSKVKEAMAPKHKEMPFPKYPVEPFT
 ESQSLTLTDVENLHLPLPLLQSWMHQPHQPLPPTVMFPPQSVLSLSQSKVLPVPQKAVPY
 PQRDMPIQAFLLYQEPVLGPVRGPFPIIV
->sp:Q62622_CHAIN0 \ID=4EBP1_RAT \PName=(Eukaryotic translation initiation factor 4E-binding protein 1) (4E-BP1) (eIF4E-binding protein 1) (Phosphorylated heat- and acid-stable protein regulated by insulin 1) (PHAS-I) \NcbiTaxId=10116 \Length=116 \ModRes=(1|1|ACET_nterm)(63|63|PHOS)
+>sp:Q62622_CHAIN0 \ID=4EBP1_RAT \PName=(Eukaryotic translation initiation factor 4E-binding protein 1) (4E-BP1) (eIF4E-binding protein 1) (Phosphorylated heat- and acid-stable protein regulated by insulin 1) (PHAS-I) \NcbiTaxId=10116 \Length=116 \ModRes=(1||ACET_nterm)(63||PHOS)
 SAGSSCSQTPSRAIPTRRVALGDGVQLPPGDYSTTPGGTLFSTTPGGTRIIYDRKFLMEC
 RNSPVAKTPPKDLPTIPGVTSPTSDEPPMQASQSHLHSSPEDKRAGGEESQFEMDI
 >sp:P62258 \ID=1433E_HUMAN \PName=(14-3-3 protein epsilon) (14-3-3E) \NcbiTaxId=9606 \Length=255 \AltAC=P62258 \ModResPsi=(1|MOD:00058|N-acetyl-L-methionine)
