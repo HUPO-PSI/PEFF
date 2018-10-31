@@ -1,4 +1,4 @@
-# PEFF 1.0.
+# PEFF 1.0
 # //
 # DbName=genericDB
 # DbSource=http://www.biobix.be/proteoform/
@@ -10,11 +10,11 @@
 # SequenceType=AA
 # GeneralComment=Proteogenomics application to generate protein sequences from RIBO-seq
 # //
->gen:ENST00000000412-1 \DbUniqueId=ENST00000000412-1 \PName=mannose-6-phosphate receptor, cation dependent  \GName=mannose-6-phosphate receptor, cation dependent  \NcbiTaxId=9606 \TaxName=Homo sapiens \Length=277 \VariantSimple=(1:122|H) \VariantComplex=(2:1|120|M)(3:1|191|M)(4:1|235|M)  \Proteoform=(ENST00000000412_12_8946404_aTIS_pf1.0|1-277||canonical form)(ENST00000000412_12_8946404_aTIS_1_pf1.4|1-277|1|proteoform with SAV)(ENST00000000412_12_8943896_CDS_pf1.5|1-277|2|N-terminal truncation)(ENST00000000412_12_8943418_CDS_pf1.2|1-277|3|N-terminal truncation)(ENST00000000412_12_8942424_CDS_pf1.3|1-277|4|N-terminal truncation)(ENST00000000412_12_8943896_CDS_1_pf1.1|1-277|1,2|N-terminal truncation, proteoform with SAV)
+>gen:ENST00000000412-1 \PName=mannose-6-phosphate receptor, cation dependent  \GName=mannose-6-phosphate receptor, cation dependent  \NcbiTaxId=9606 \TaxName=Homo sapiens \Length=277 \VariantSimple=(1:122|H) \VariantComplex=(2:1|120|M)(3:1|191|M)(4:1|235|M)  \Proteoform=(ENST00000000412_12_8946404_aTIS_pf1.0|1-277||canonical form)(ENST00000000412_12_8946404_aTIS_1_pf1.4|1-277|1|proteoform with SAV)(ENST00000000412_12_8943896_CDS_pf1.5|1-277|2|N-terminal truncation)(ENST00000000412_12_8943418_CDS_pf1.2|1-277|3|N-terminal truncation)(ENST00000000412_12_8942424_CDS_pf1.3|1-277|4|N-terminal truncation)(ENST00000000412_12_8943896_CDS_1_pf1.1|1-277|1,2|N-terminal truncation, proteoform with SAV)
 MFPFYSCWRTGLLLLLLAVAVRESWQTEEKTCDLVGEKGKESEKELALVKRLKPLFNKSFESTVGQGSDTYIYIFRVCREAGNHTSGAGLVQINKSNGKETVVGRLNETHIFNGSNWIMLIYKGGDEYDNHCGKEQRRAVVMISCNRHTLADNFNPVSEERGKVQDCFYLFEMDSSLACSPEISHLSVGSILLVTFASLVAVYVVGGFLYQRLVVGAKGMEQFPHLAFWQDLGNLVADGCDFVCRSKPRNVPAAYRGVGDDQLGEESEERDDHLLPM
->gen:ENST00000000412-2 \DbUniqueId=ENST00000000412-2 \PName=uORF of mannose-6-phosphate receptor, cation dependent  \GName=mannose-6-phosphate receptor, cation dependent  \NcbiTaxId=9606 \TaxName=Homo sapiens \Length=41 \VariantComplex=(1:1|11|M)  \Proteoform=(ENST00000000412_12_8949642_5UTR_pf2.0|1-41||canonical form)(ENST00000000412_12_8949612_5UTR_pf2.1|1-41|1|N-terminal truncation)
+>gen:ENST00000000412-2 \PName=uORF of mannose-6-phosphate receptor, cation dependent  \GName=mannose-6-phosphate receptor, cation dependent  \NcbiTaxId=9606 \TaxName=Homo sapiens \Length=41 \VariantComplex=(1:1|11|M)  \Proteoform=(ENST00000000412_12_8949642_5UTR_pf2.0|1-41||canonical form)(ENST00000000412_12_8949612_5UTR_pf2.1|1-41|1|N-terminal truncation)
 MGHSEALGGTLASETSSGTGVCGRPLAGPVSHPQKGIHWGF
->gen:ENST00000000412-3 \DbUniqueId=ENST00000000412-3 \PName=Alternative reading frame product of mannose-6-phosphate receptor, cation dependent  \GName=mannose-6-phosphate receptor, cation dependent  \NcbiTaxId=9606 \TaxName=Homo sapiens \Length=16  \Proteoform=(ENST00000000412_12_8946336_CDS_pf3.0|1-16||canonical form)
+>gen:ENST00000000412-3 \PName=Alternative reading frame product of mannose-6-phosphate receptor, cation dependent  \GName=mannose-6-phosphate receptor, cation dependent  \NcbiTaxId=9606 \TaxName=Homo sapiens \Length=16  \Proteoform=(ENST00000000412_12_8946336_CDS_pf3.0|1-16||canonical form)
 MLADRRKNLRLGRRKG
->gen:ENST00000000412-4 \DbUniqueId=ENST00000000412-4 \PName=Alternative reading frame product of mannose-6-phosphate receptor, cation dependent  \GName=mannose-6-phosphate receptor, cation dependent  \NcbiTaxId=9606 \TaxName=Homo sapiens \Length=56  \Proteoform=(ENST00000000412_12_8943516_CDS_pf4.0|1-56||canonical form)
+>gen:ENST00000000412-4 \PName=Alternative reading frame product of mannose-6-phosphate receptor, cation dependent  \GName=mannose-6-phosphate receptor, cation dependent  \NcbiTaxId=9606 \TaxName=Homo sapiens \Length=56  \Proteoform=(ENST00000000412_12_8943516_CDS_pf4.0|1-56||canonical form)
 MRSVAKSKIVSTSLRWIAAWPVHQRSPTSVWVPSYLSRLHHWLLFMLLGGSYTSDW
